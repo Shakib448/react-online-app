@@ -24,9 +24,9 @@ const Course = () => {
                     <div className="col-md-12 mx-auto">
                         <div className="row gy-4">
                             {
-                                BookCourse.map((enroll, ind) =>{
+                                BookCourse.map((enroll, id) =>{
                                     return <Card
-                                        key = {ind}
+                                        key = {id}
                                         enroll = {enroll}
                                         handelEnroll= {handelEnroll}
                                     />

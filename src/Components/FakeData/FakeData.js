@@ -19,76 +19,91 @@ import p15 from "./Image/p15.png";
 
 const fakeData = [
     {
+        id: 0,
         imgsrc : p1,
         title : "Web development",
         price : "35,000"
     },
     {
+        id: 1,
         imgsrc : p2,
         title : "App development",
         price : "40,000"
     },
     {
+        id: 2,
         imgsrc : p3,
         title : "Softwere development",
         price : "50,000"
     },
     {
+        id: 3,
         imgsrc : p4,
         title : "React Js",
         price : "20,000"
     },
     {
+        id: 4,
         imgsrc : p5,
         title : "Javascript",
         price : "25,000"
     },
     {
+        id: 5,
         imgsrc : p6,
         title : "Illustration",
         price : "12,000"
     },
     {
+        id: 6,
         imgsrc : p7,
         title : "CPA Marketing",
         price : "17,000"
     },
     {
+        id: 7,
         imgsrc : p8,
         title : "SEO Optimization",
         price : "9,000"
     },
     {
+        id: 8,
         imgsrc : p9,
         title : "Typing",
         price : "3,000"
     },
     {
+        id: 9,
         imgsrc : p10,
         title : "Online Business",
         price : "8,000"
     },
     {
+        id: 10,
         imgsrc : p11,
         title : "Affiliate Business",
         price : "16,000"
     },
     {
+        id: 11,
         imgsrc : p12,
         title : "Graphic Design",
         price : "13,000"
     },
     {
+        id: 12,
         imgsrc : p13,
         title : "E-commerce Business",
         price : "26,000"
     },
     {
+        id: 13,
         imgsrc : p14,
         title : "Youtubing",
         price : "23,000"
     },
     {
+        id: 14,
         imgsrc : p15,
         title : "Marketing",
         price : "11,000"
