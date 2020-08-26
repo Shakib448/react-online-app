@@ -1,9 +1,9 @@
 import React from "react";
 
 const Card = (props) => {
-    const handelEnroll = props.handelEnroll
+    const handelEnroll = props.handelEnroll;
 
-    const {imgsrc, title, price} = props.enroll
+    const {imgsrc, title, price} = props.enroll;
 
     return (
         <>

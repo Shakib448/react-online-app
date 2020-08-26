@@ -21,7 +21,9 @@ const Course = () => {
     return (
         <>
             <div className="my-5 text-center">
-                <h1 className="btn btn-outline-primary">Our Courses {BookCourse.length} </h1>
+                <h1 className="btn btn-outline-primary mr-2">Total Courses {BookCourse.length} </h1>
+                <h1 className="btn btn-outline-primary">Total Enrolled {enrollCourse.length} </h1> <br/>
+                <h1 className="btn btn-outline-primary">Total Enrolled Cost {total} </h1>
             </div>
             <div className="container-fluid mb-5">
                 <div className="row">
@@ -37,17 +39,18 @@ const Course = () => {
                                 })
                             }
                             {/* For Buy Course  */}
+                            <div>
                             {
-                                
                                 enrollCourse.map((buyCourse, index) =>{
-                                   return <EnrollCourse 
-                                   img={buyCourse.imgsrc} 
-                                   title={buyCourse.title}
-                                   buyCount={enrollCourse.length}
-                                   total={total}
-                                   key={index}/>
+                                return <EnrollCourse
+                                img={buyCourse.imgsrc} 
+                                title={buyCourse.title}
+                                buyCount={enrollCourse.length}
+                                key={index}/>
                                 })
+
                             }
+                            </div>
 
                         </div>
                     </div>
