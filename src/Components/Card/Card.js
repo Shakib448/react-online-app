@@ -23,7 +23,7 @@ const Card = (props) => {
                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <button  ref={btnRef} onClick={() => {
                             props.handelEnroll(props.enroll);
-                            changeText('Purchased');
+                            changeText('Enrolled');
                             onBtnClick();
                         }} type="button" className="btn btn-primary">
                             {btnText}
