@@ -2,12 +2,8 @@ import React, {useState ,useRef} from "react";
 
 
 const Card = (props) => {
-    const handelEnroll = props.handelEnroll;
 
     const {imgsrc, title, price} = props.enroll;
-
-    console.log(props.enroll)
-
 
 
     
