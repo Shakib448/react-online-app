@@ -1,9 +1,21 @@
-import React from "react";
+import React, {useState ,useRef} from "react";
+
 
 const Card = (props) => {
     const handelEnroll = props.handelEnroll;
 
     const {imgsrc, title, price} = props.enroll;
+
+    console.log(props.enroll)
+
+
+
+    
+    const [btnText, setBtnText] = useState('Enroll Now');
+    const changeText = (text) => setBtnText(text);
+
+    const btnRef = useRef();
+    const onBtnClick = () => btnRef.current.setAttribute('disabled', 'disabled');
 
     return (
         <>
@@ -13,7 +25,14 @@ const Card = (props) => {
                     <div className="card-body">
                         <h5 className="card-title font-weight-bold">{title}</h5>
                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button  className="btn btn-primary" onClick={() => handelEnroll(props.enroll)} >Enroll</button>
+                        <button  ref={btnRef} onClick={() => {
+                            props.handelEnroll(props.enroll);
+                            changeText('Purchased');
+                            onBtnClick();
+                        }} type="button" className="btn btn-primary">
+                            {btnText}
+                        </button>
+
                         <button  className="btn btn-outline-primary ml-2">{price}</button>
                     </div>
                 </div>

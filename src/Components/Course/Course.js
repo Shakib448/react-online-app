@@ -14,15 +14,15 @@ const Course = () => {
     const [BookCourse, setBookCourse] = useState(FakeData);
     
     const [enrollCourse, setEnrollCourse] = useState([]);
-    
+
+
     const handelEnroll = (enroll) => {
         const newEnroll = [...enrollCourse, enroll];
         setEnrollCourse(newEnroll);
+
+
     }
 
-
-
-    
     const total = enrollCourse.reduce((total, add)=> total + parseInt(add.price.replace(/,/g, '')) , 0)
 
     return (
